@@ -1,22 +1,22 @@
 package com.tocean.crm.entity;
 
 
+import com.tocean.crm.common.base.baseObject.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
+import java.util.Date;
 @Entity
 @Data
 @Table(name="student_homework")
-public class Homework {
-    @Column(name = "id")
-    private int id;
+public class Homework extends BaseEntity {
+
     @Column(name = "title")
     private String title;
     @Column(name = "make_date")
-    private Data makeDate;
+    private Date makeDate;
     @Column(name = "teacher")
     private String teacher;
     @Column(name="status")
@@ -24,15 +24,11 @@ public class Homework {
     @Column(name = "other")
     private String other;
     @Column(name = "course_id")
-    private int courseId;
+    private String courseId;
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
+
 
     public String getTitle() {
         return title;
@@ -42,11 +38,11 @@ public class Homework {
         this.title = title;
     }
 
-    public Data getMakeDate() {
+    public Date getMakeDate() {
         return makeDate;
     }
 
-    public void setMakeDate(Data makeDate) {
+    public void setMakeDate(Date makeDate) {
         this.makeDate = makeDate;
     }
 
@@ -74,11 +70,11 @@ public class Homework {
         this.other = other;
     }
 
-    public int getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(int courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 }

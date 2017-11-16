@@ -27,6 +27,7 @@ public class HomeworkController {
     private StudentService studentService;
     @GetMapping(value = "/api/findhomework")
     public Response profile(HttpServletRequest request){
+        System.out.println("我少时诵诗书所所所所所所所所所所所所所所所所所");
         try{
             String loginName = request.getHeader(JwtUtil.USER_ID);
             Student student = studentService.findByLoginName(loginName);
@@ -40,4 +41,3 @@ public class HomeworkController {
 
 
 }
-

@@ -6,6 +6,7 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.sql.Blob;
 import java.util.Date;
 
 /**
@@ -51,10 +52,71 @@ public class Student extends BaseEntity {
     private String school;
     @Column(name="graduateDate")
     private String graduateDate;
-    @Column(name="homeAddress")
-    private String homeAddress;
     @Column(name="hobby")
     private String hobby;
+    @Column(name = "email")
+    private String email;
+    @Column(name="qq")
+    private String qq;
+    @Column(name = "msn")
+    private String msn;
+    @Column(name = "home_address")
+    private String homeAddress;
+    @Column(name = "home_phone")
+    private String homePhone;
+    @Column(name = "comminucation_address")
+    private  String comminucationAddress;
+    @Column(name = "credential_no")
+    private String credentialNo;
+    @Column(name = "guardian")
+    private String guardian;
+    @Column(name = "guardian_phone")
+    private String guardianPhone;
+    @Column(name = "relation")
+    private String relation;
+    @Column(name = "urgency_person")
+    private String urgencyPerson;
+    @Column(name = "urgency_phone")
+    private String urgencyPhone;
+    @Column(name = "train_company")
+    private  String trainCompany;
+    @Column(name = "train_time")
+    private  String trainTime;
+    @Column(name = "train_context")
+    private  String trainContext;
+    @Column(name = "old_company")
+    private String oldCompany;
+    @Column(name = "old_headship")
+    private String oldHeadship;
+    @Column(name = "old_salary")
+    private  int oldSalary;
+    @Column(name = "family_backgroud")
+    private String familyBackgroud;
+    @Column(name = "parent_status")
+    private String parentStatus;
+    @Column(name = "job_design")
+    private String jobDesign;
+    @Column(name = "target")
+    private String target;
+    @Column(name = "economy")
+    private String economy;
+    @Column(name = "qulity_score")
+    private Double qulityScore;
+    @Column(name = "skill_score")
+    private Double skillScore;
+    @Column(name = "danei_graduatedate")
+    private Date daneiGraduateDate;
+    @Column(name = "inner_headship")
+    private String innerHeadship;
+    @Column(name = "pic")
+    private Blob pic;
+    @Column(name = "pic_filename")
+    private String picFilename;
+    @Column(name = "resume")
+    private Blob resume;
+    @Column(name = "resume_filename")
+    private String resumeFilename;
+    @Column(name = "")
 
     public String getCode() {
         return code;
